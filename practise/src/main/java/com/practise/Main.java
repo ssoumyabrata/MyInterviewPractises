@@ -35,7 +35,7 @@ public class Main {
         System.out.println("list of Duplicate characters: "+listOfDuplicates);
 
         CountTheString.removeTheDuplicate("letters");
-
+        System.out.println("After removing duplicate characters: "+CountTheString.removeTheDuplicate("letters"));
     }
 }
 
