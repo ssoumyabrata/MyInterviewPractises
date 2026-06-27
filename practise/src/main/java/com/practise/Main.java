@@ -36,6 +36,10 @@ public class Main {
 
         CountTheString.removeTheDuplicate("letters");
 
+        System.out.println("Words are anagram ? = "+ Anagram.checkIfAnagram("listen", "silent"));
+        System.out.println("Words are anagram ? = "+ Anagram.checkIfAnagramWithOneMap("fried", "fired"));
+        System.out.println("Words are anagram ? = "+ Anagram.checkIfAnagramWithOneMap("friEd", "fired"));
+
     }
 }
 
