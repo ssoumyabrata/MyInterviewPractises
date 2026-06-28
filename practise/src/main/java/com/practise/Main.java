@@ -43,8 +43,11 @@ public class Main {
         System.out.println("Words are anagram ? = "+
         Anagram.checkIfAnagramWithOneMap("friEd", "fired"));
         VowelConsonant.findVowelConsonent("Soumyabrata Saha");
-        VowelConsonant.longestSubstringWithoutRepeatChar("Soumyabrata");
-        VowelConsonant.slidingWindow("abcabcabcabc"); // Expected: "abc" or "bca" or "cab" (length 3)
+        SubstringPrograms.slidingWindow("abcabcabcabc"); // Expected: "abc" or "bca" or "cab" (length 3)
+
+        SubstringPrograms.printAllSubstring("Saha");
+
+        System.out.println("Rotation matches or not : "+ SubstringPrograms.checkIfRotationMatch("saha", "hasa"));
 
     }
 }
