@@ -5,13 +5,14 @@ public class ReverseString {
         String str = "Soumyabrata";
         String rev = "";
 
-
+        //one way - using reverse for loop and charAt method of String
         for(int i = str.length()-1; i >= 0; i--){
             rev = rev + str.charAt(i);
         }
 
         System.out.println(rev);
 
+        // another way - using temp variable
         char[] arr = rev.toCharArray();
         char temp;
         int left = 0, right = arr.length-1;
@@ -30,10 +31,15 @@ public class ReverseString {
 
     }
 
+    //recursion
     static String rev(String str){
         if(str.isEmpty()){
             return str;
         }
         return rev(str.substring(1)) + str.charAt(0);
     }
+
+
+    // ignoring to understand a too much complex program - 
+    // >> Find the longest palindrome in a string
 }
